@@ -245,7 +245,6 @@ iframe {
 .single-product:hover {
     transition: all 1s ease;
     scale: 103%;
-    box-shadow: #0080ff 0 0 3px;
 }
 
 /* Контейнер з 1 продуктом без наведення плавно */
