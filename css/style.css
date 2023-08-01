@@ -238,7 +238,7 @@ iframe {
     border-radius: 15px;
     padding: 20px;
     width: 25vw;
-    height: 70vh;
+    height: 75vh;
 }
 
 /* Контейнер з 1 продуктом наведення */
@@ -257,7 +257,7 @@ iframe {
 .catalog-img {
     margin: 25px 0;
     width: 20vw;
-    height: 40vh;
+    height: 45vh;
 }
 
 /* Назва товару */
