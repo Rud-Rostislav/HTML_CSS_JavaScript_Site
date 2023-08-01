@@ -139,12 +139,13 @@ label i {
     justify-content: center;
     align-items: center;
     width: 75vw;
-    margin: 250px auto 0;
+    margin: 100px auto 0;
 }
 
 /* Головна контейнер зображень перевернута */
 .background-container-2 {
     flex-direction: row-reverse;
+    margin: 250px auto 0;
 }
 
 /* Головна зображення */
