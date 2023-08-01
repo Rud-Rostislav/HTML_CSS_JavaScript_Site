@@ -12,6 +12,8 @@
 body {
     background-color: white;
     color: #000000;
+    /* Hide scrollbars */
+    overflow: hidden;
 }
 
 /* Чорна тема */
