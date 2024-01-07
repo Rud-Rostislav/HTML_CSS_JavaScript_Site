@@ -16,19 +16,18 @@ body {
 
 /* Чорна тема */
 .dark-mode {
-    background-color: #22262a;
+    background-color: #32393f;
     color: white;
 }
 
 /* Шапка */
 header {
     display: flex;
-    justify-content: center;
-    gap: 25%;
+    justify-content: space-around;
     height: 10vh;
     background: #1c1c21;
     color: white;
-    font-size: 2rem;
+    font-size: 1.5rem;
 }
 
 /* Контейнер лого і текст */
@@ -39,7 +38,7 @@ header {
 
 /* Лого зображення */
 .logo-img {
-    width: 5vh;
+    width: 3vh;
 }
 
 /* Текст біля лого */
@@ -68,7 +67,7 @@ a, a:visited {
 /* Іконки */
 .icon {
     display: flex;
-    height: 3vh;
+    height: 2.5vh;
 }
 
 /* Футер в кінці */
@@ -85,6 +84,7 @@ footer {
     align-items: center;
     justify-content: center;
     font-size: 1.5rem;
+    padding: 40px 0;
 }
 
 /* Чекбокс позиція */
@@ -97,7 +97,7 @@ footer {
 .checkbox-label {
     background-color: #111;
     width: 50px;
-    height: 26px;
+    height: 25px;
     border-radius: 50px;
     cursor: pointer;
     display: flex;
@@ -128,7 +128,7 @@ label i {
 
 /* Збільшення дів з кнопкою чорної теми */
 .darkmode {
-    scale: 150%;
+    scale: 100%;
     border: white 1px solid;
     border-radius: 25px;
 }
@@ -139,32 +139,33 @@ label i {
     justify-content: center;
     align-items: center;
     width: 75vw;
-    margin: 100px auto 0;
+    min-height: 100vh;
+    margin: 0 auto 0;
 }
 
 /* Головна контейнер зображень перевернута */
 .background-container-2 {
     flex-direction: row-reverse;
-    margin: 250px auto 0;
+    margin: 0px auto 0;
 }
 
 /* Головна зображення */
 .background-img {
-    border-radius: 50px;
-    width: 50vw;
-    height: 75vh;
+    border-radius: 20px;
+    width: 60vw;
+    height: 50vh;
 }
 
 /* Головна зображення анімація */
 .background-img:hover {
     box-shadow: rgba(44, 44, 44, 0.65) 0 0 15px;
-    transition: all 1s;
+    transition: all 0.5s;
     scale: 103%;
 }
 
 /* Головна зображення без анімації */
 .background-img:not(:hover) {
-    transition: all 1s;
+    transition: all 0.5s;
 }
 
 /* Фото слайдер 1 на головній */
@@ -177,8 +178,8 @@ label i {
 /* Фото слайдер 2 на головній */
 .div_image2 {
     background: url('../img/ backgrounds/background-3.jpg') no-repeat fixed center center;
-    background-size: 175vh;
-    height: 80vh;
+    background-size: 180vh;
+    height: 100vh;
 }
 
 /* Текст на головній градієнт */
@@ -201,7 +202,7 @@ label i {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    height: 85vh;
+    height: 90vh;
 }
 
 /* Карта */
@@ -235,28 +236,29 @@ iframe {
     justify-content: center;
     background: #1b1d23;
     color: white;
-    border-radius: 50px;
-    padding: 20px;
+    border-radius: 25px;
+    padding: 50px;
     width: 25vw;
-    height: 75vh;
+    max-height: 75vh;
 }
+
 
 /* Контейнер з 1 продуктом наведення */
 .single-product:hover {
-    transition: all 1s ease;
+    transition: all 0.5s ease;
     scale: 103%;
 }
 
 /* Контейнер з 1 продуктом без наведення плавно */
 .single-product:not(:hover) {
-    transition: all 1s ease;
+    transition: all 0.5s ease;
 }
 
 /* Картинка товару */
 .catalog-img {
     margin: 25px 0;
-    width: 20vw;
-    height: 45vh;
+    max-width: 20vw;
+    max-height: 40vh;
 }
 
 /* Назва товару */
@@ -266,5 +268,43 @@ iframe {
 
 /* Опис товару */
 .product-description {
-    font-size: 1.2rem;
+    font-size: 1.1rem;
+}
+
+/* Для екранів менше 1000 */
+@media screen and (max-width: 1000px) {
+    .single-product {
+        width: 40vw;
+        padding: 25px;
+    }
+
+    header {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 50px;
+        font-size: 1rem;
+        height: 15vh;
+    }
+
+    .background-container {
+        flex-wrap: wrap;
+    }
+
+    .background-img {
+        width: 90vw;
+        height: 40vh;
+    }
+
+    .background-container-2 {
+        flex-wrap: wrap;
+    }
+
+    .div_image1 {
+        background-size: 75vh;
+    }
+
+    .div_image2 {
+        background-size: 100vh;
+    }
 }
